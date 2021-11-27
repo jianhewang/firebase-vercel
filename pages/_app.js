@@ -1,7 +1,16 @@
-import '../styles/reboot.css'
+import GlobalStyles from "../styles/globalStyles";
+import {ThemeProvider} from  "styled-components";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <GlobalStyles/>
+      {/* <ThemeProvider> */}
+      <Component {...pageProps} />
+      {/* </ThemeProvider> */}
+    </>
+  )
 }
 
-export default MyApp
+export default App
