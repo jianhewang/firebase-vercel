@@ -1,43 +1,33 @@
-// import firebase from '../firebase'
-
-// import NavBar from '../components/navbar'
-// import Brand from './../components/branding'
-
-// export default function Home() {
-   
-//   return (
-//      <div>
-//        <NavBar/>
-//        <Brand title="Home Page" tagline="directory app start"/>
-
-//      </div>
-     
-       
-    
-//   )
-// }
-
-import GoogleProvider from "../components/auth/provider/google";
-import Button from "../components/ui/button";
-
+import { AppBar } from "components/appbar"
+import { GoogleProvider } from "components/authentication/providers"
+import { Title } from "ui/title"
+import { Spacer } from "ui/spacers"
+import {UserLogin} from "components/authentication/user-login"
+import { Legal, HighLight } from "ui/legal"
+import {PageLayout, PageHeader, PageFooter, PageBody} from 'layouts/loginpage'
 function index (){
-  return(
-    <div>
-      {/* <Button bgcolor="tomato">
-        Signup with firebase
-      </Button>
+    
+    return(
+        <>
+              <AppBar/>
+              <PageLayout>
+                    <PageHeader>
+                    <Title>Account Login</Title>
+                    </PageHeader>
+               <PageBody>
+                   <GoogleProvider>With Google</GoogleProvider>
+                   <Spacer className="spacing" >OR</Spacer>
+                   <UserLogin/>
+                </PageBody>             
+                <PageFooter>
+                        <Legal>Legal Stuff  <HighLight>terms and conditions</HighLight></Legal>
+                </PageFooter>
 
-      <Button bgcolor="blue">
-        Signup with firebase
-      </Button>
-
-      <Button bgcolor="orange">
-        Signup with firebase
-      </Button> */}
-
-      <GoogleProvider></GoogleProvider>
-    </div>
-  )
+              </PageLayout>
+        </>
+    )
 }
+
+ 
 
 export default index
