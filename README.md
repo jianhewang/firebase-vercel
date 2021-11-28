@@ -3,6 +3,7 @@
 A todo app developed with next.js, firebase, and vercel
 
 [Vercel repo](https://vercel.com/jianhewang/react-todo-app)
+
 [Vercel demo site](https://react-todo-app-beryl-omega.vercel.app/)
 
 ## Installation
