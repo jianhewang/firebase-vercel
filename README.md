@@ -27,5 +27,9 @@ npm run dev
   - After login, redirect user to the todo page.
   - Restricted access on todo page without login.
 
+- Dec 5 - Firebase Authentication Providers 
+  - User can login with Google or GitHub account
+  - Website will redirect to the todo page after the successful login 
+
 ## License
 Educational purpose only. Copyright 2021.
