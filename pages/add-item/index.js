@@ -28,8 +28,8 @@ function AddItemPage(props) {
    console.log(newToDo);
      if (user){
        console.log(user.uid);
-       //const docPath = `todos/${user.uid}`
-       const docPath = `todos/KO6561MXz9dD1022vIcV`
+       const docPath = `todos/${user.uid}`
+       //const docPath = `todos/KO6561MXz9dD1022vIcV`
        const docRef = await doc(db, docPath)
        const temp = await updateDoc(docRef, newToDo)
        const todos = await getDoc(docRef)
