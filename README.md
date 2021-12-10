@@ -31,5 +31,10 @@ npm run dev
   - User can login with Google or GitHub account
   - Website will redirect to the todo page after the successful login 
 
+- Dec 12 - Add To Do item to cloud firestore
+  - New add item page UI setup
+  - User can add new to do items into the firestore 
+
+
 ## License
 Educational purpose only. Copyright 2021.
