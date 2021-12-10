@@ -15,7 +15,7 @@ const ItemId = styled.div`
  
  function UniqueId({label, uid, ...props}) {
     return (
-       <ItemId {...props}>
+       <ItemId>
         <label htmlFor="uid">{label || "item id:"}</label>
         <input type="text" disabled placeholder={ uid} />
       </ItemId>
